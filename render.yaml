@@ -8,10 +8,10 @@ services:
     name: rails
     env: ruby
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec rails s"
+    startCommand: bundle exec rails s
     envVars:
       - key: RAILS_MASTER_KEY
-        sinc: false
+        sync: false
       - key: DATABASE_URL
         fromDatabase:
           name: postgres
