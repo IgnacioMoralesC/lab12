@@ -1,0 +1,9 @@
+<footer class="footer bg-light py-2 mt-auto">
+  <div class="container text-center">
+    <% if user_signed_in? %>
+        <%= button_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-dark" %>
+    <% end %>
+  </div>
+</footer>
+
+

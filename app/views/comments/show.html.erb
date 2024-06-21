@@ -1,0 +1,11 @@
+<h1><%= @post.title %></h1>
+<h2>Author: <%= @post.user.name %></h2>
+<p><%= @post.content %></p>
+
+<p><strong>Comment Body:</strong></p>
+<p><%= @comment.body %></p>
+
+<p><strong>Comment Author:</strong></p>
+<p><%= @comment.user.name %></p>
+
+<%= link_to "Back to Post", @post, class: "btn btn-primary" %>
